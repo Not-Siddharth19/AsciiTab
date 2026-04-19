@@ -1,5 +1,14 @@
 <p align="center">
-  <img src="images/logo.png" alt="AsciiTab" width="200"/>
+  <pre style="display:inline-block;text-align:center;font-family:monospace;font-size:12px;line-height:1.2;color:#cba6f7;">
+   /$$$$$$                      /$$ /$$ /$$$$$$$$        
+  /$$__  $$                    |__/|__/|__  $$__/       
+ | $$  \ $$  /$$$$$$$  /$$$$$$$ /$$ /$$   | $$  /$$$$$$ | $$$$$$$ 
+ | $$$$$$$$ /$$_____/ /$$_____/| $$| $$   | $$ |____  $$| $$__  $$
+ | $$__  $$|  $$$$$$ | $$      | $$| $$   | $$  /$$$$$$$| $$  \ $$
+ | $$  | $$ \____  $$| $$      | $$| $$   | $$ /$$__  $$| $$  | $$
+ | $$  | $$ /$$$$$$$/|  $$$$$$$| $$| $$   | $$|  $$$$$$$| $$$$$$$/
+ |__/  |__/|_______/  \_______/|__/|__/   |__/ \_______/|_______/ 
+  </pre>
 </p>
 
 <h1 align="center">AsciiTab</h1>
@@ -103,25 +112,38 @@ AsciiTab is **100% client-side**. Your data never leaves your device.
 
 ## 📥 Installation
 
+### Firefox (Recommended)
+
+<a href="https://addons.mozilla.org/en-US/firefox/addon/asciitab/" target="_blank">
+  <img src="https://img.shields.io/badge/Install-Firefox-FF7139?style=for-the-badge&logo=firefox-browser" alt="Install on Firefox">
+</a>
+
+1. Visit the [AsciiTab Firefox Add-on](https://addons.mozilla.org/en-US/firefox/addon/asciitab/) page
+2. Click **"Add to Firefox"**
+3. Click **"Add"** when prompted
+4. Open a new tab to see AsciiTab
+
+*Note: The Firefox add-on is signed and hosted on addons.mozilla.org (AMO)*
+
 ### Chrome / Edge / Brave
 
-```bash
-1. Download the latest .zip release
-2. Extract to a folder
-3. Navigate to chrome://extensions
-4. Enable Developer mode (top right)
-5. Click "Load unpacked"
+1. Download the latest release from [GitHub Releases](https://github.com/Not-Siddharth19/AsciiTab-Catppuccin/releases)
+2. Extract the ZIP file to a folder
+3. Open `chrome://extensions` in your browser
+4. Enable **Developer mode** (toggle in top right)
+5. Click **"Load unpacked"**
 6. Select the extracted folder
-```
+7. Open a new tab to see AsciiTab
 
-### Firefox
+### For Development
 
-```bash
-1. Download the latest .zip release
-2. Navigate to about:debugging#/runtime/this-firefox
-3. Click "Load Temporary Add-on"
-4. Select manifest.json
-```
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Not-Siddharth19/AsciiTab-Catppuccin.git
+   ```
+2. Open Chrome/Edge → `chrome://extensions`
+3. Enable Developer mode
+4. Click "Load unpacked" and select the cloned folder
 
 ---
 

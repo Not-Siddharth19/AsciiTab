@@ -1,9 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   initTheme();
-  initScrollAnimations();
   initCollapsible();
-  initFAQ();
-  initThemeShowcase();
 });
 
 const themes = ['mocha', 'latte', 'macchiato', 'frappe'];
@@ -66,7 +63,7 @@ function initScrollAnimations() {
 }
 
 function initCollapsible() {
-  const collapsibles = document.querySelectorAll('.collapsible');
+  const collapsibles = document.querySelectorAll('.collapsible, .collapsible-section');
 
   collapsibles.forEach(collapsible => {
     const header = collapsible.querySelector('.collapsible-header');

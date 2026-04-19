@@ -1,0 +1,163 @@
+================================================================================
+ASCITAB GITHUB INSTRUCTIONS
+================================================================================
+
+This file contains the steps you need to do on GitHub to publish your themes.
+Follow these in order for each theme repo you create.
+
+================================================================================
+PART 1: SETUP A NEW THEME REPO
+================================================================================
+
+1. Go to https://github.com/Not-Siddharth19 (your GitHub)
+
+2. Click "+" → "New repository"
+
+3. Fill in:
+   - Repository name: AsciiTab-Catppuccin  (or AsciiTab-RosePine, etc.)
+   - Description: A keyboard-driven new tab dashboard with [THEME NAME] theming.
+   - Public
+   - Add README: Yes
+   - License: MPL-2.0
+
+4. Click "Create repository"
+
+================================================================================
+PART 2: UPLOAD FILES TO REPO
+================================================================================
+
+1. In your new repo, click "uploading an empty file" (or go to Add file → Upload files)
+
+2. Upload these files:
+   - index.html
+   - style.css
+   - script.js
+   - manifest.json
+   - LICENSE
+   - icons/ (folder with icon*.png files)
+
+3. Commit directly to "main" branch
+
+================================================================================
+PART 3: CREATE A RELEASE (FOR CHROME USERS)
+================================================================================
+
+1. In your theme repo, go to "Releases" in the right sidebar
+
+2. Click "Create a new release"
+
+3. Fill in:
+   - Tag version: v1.0.0 (or appropriate version)
+   - Release title: AsciiTab - [Theme Name] v1.0.0
+   - Description: 
+     ## What's New
+     - Initial release with [theme] theme
+     - Commands: !gh, !yt, !r, !wa, @s, @h, @theme, @min
+     - Features: clock, tasks, notes, widgets
+     
+     ## Install
+     - Chrome: Download ZIP → Extract → Load unpacked
+     - Firefox: Get from addons.mozilla.org
+
+4. Click "Publish release"
+
+5. The release will have a .zip download (auto-generated)
+
+================================================================================
+PART 4: SUBMIT TO FIREFOX ADD-ONS (AMO)
+================================================================================
+
+1. Go to https://addons.mozilla.org/developers/
+
+2. Sign in with GitHub (or create account)
+
+3. Click "Submit a New Add-on"
+
+4. Choose "On this page" and upload your manifest.json (or paste GitHub repo URL)
+
+5. Fill in:
+   - Name: AsciiTab - [Theme Name]
+   - Description: A keyboard-driven new tab dashboard with [THEME] theming.
+   - Category: Home & Homepage
+
+6. Upload icon images (256x256 recommended)
+
+7. Click "Submit"
+
+8. WAIT for review (can take hours to days)
+
+9. Once approved, you'll get an AMO URL like:
+   https://addons.mozilla.org/addon/asciitab-[theme]/
+
+10. Update your landing page with this AMO URL!
+
+================================================================================
+PART 5: UPDATE LANDING PAGE
+================================================================================
+
+1. Edit index.html on AsciiTab landing page repo
+
+2. Add your theme to the themes-grid:
+
+   <div class="theme-card">
+     <div class="theme-preview">
+       <div class="theme-preview-[name]"></div>
+     </div>
+     <div class="theme-info">
+       <h3>[Theme Name]</h3>
+       <p class="theme-desc">[Variants]</p>
+       <div class="theme-actions">
+         <a href="https://addons.mozilla.org/addon/YOUR-AMO-SLUG" 
+            target="_blank" class="btn btn-small">Firefox</a>
+         <a href="https://github.com/Not-Siddharth19/AsciiTab-[THEME]"
+            target="_blank" class="btn btn-small btn-secondary">Chrome</a>
+       </div>
+     </div>
+   </div>
+
+3. Commit and push
+
+================================================================================
+PART 6: ADD SCREENSHOTS (FOR AMO)
+================================================================================
+
+AMO requires at least 1 screenshot. Recommended:
+
+1. Take a screenshot of your new tab with the theme applied
+2. Image size: 720x480px minimum, 2400x1600px maximum
+3. Save as PNG or JPEG
+4. Upload when submitting to AMO
+
+Tip: Use your browser's screenshot tool or an extension like "Full Page Screen Capture"
+
+================================================================================
+THEME REPOS TO CREATE (IN ORDER)
+================================================================================
+
+Priority 1 (DONE):
+- AsciiTab-Catppuccin (already exists)
+
+Priority 2:
+- AsciiTab-RosePine
+- AsciiTab-TokyoNight
+- AsciiTab-Dracula
+
+Priority 3:
+- AsciiTab-Nord
+- AsciiTab-GitHub
+
+Priority 4 (requested):
+- AsciiTab-Gruvbox
+- AsciiTab-Monokai
+- AsciiTab-OneDark
+
+================================================================================
+NOTES
+================================================================================
+
+- Chrome Web Store: NOT needed - users download from GitHub releases
+- Firefox AMO: Required for Firefox - this is the official distribution
+- All themes use the same code, just different colors in style.css
+- Each theme repo should have its own README with specific instructions
+
+================================================================================

@@ -67,9 +67,7 @@ AsciiTab replaces your browser's new tab page with a keyboard-first command cent
 
 ## 🎨 Themes
 
-<p align="center">
-  <img src="images/themes-preview.png" alt="Themes" width="600"/>
-</p>
+
 
 - **Mocha** - Deep Dark (Default)
 - **Macchiato** - Muted Dark
